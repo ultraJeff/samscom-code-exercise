@@ -17,7 +17,9 @@ You're welcome to use whatever libraries, build tools, editors you choose, to de
 
 ### Team Members*
 matthildenbrand
+
 chrishoage
+
 barrypeterson
 
 * From within your repo on github: Settings > Collaborators > Add Collaborator
