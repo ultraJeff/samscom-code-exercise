@@ -15,11 +15,11 @@ Welcome to the Rosetta web exercise, and thank you for your the time. The purpos
 ### Notes
 You're welcome to use whatever libraries, build tools, editors you choose, to deliver the best, most easily maintainable product.
 
-### Team Members*
+### Team Members
 matthildenbrand
 
 chrishoage
 
 barrypeterson
 
-* From within your repo on github: Settings > Collaborators > Add Collaborator
+_From within your repo on github: Settings > Collaborators > Add Collaborator_
