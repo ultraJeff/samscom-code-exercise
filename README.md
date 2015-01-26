@@ -1,5 +1,5 @@
 # Rosetta Web Exercise
-Welcome to the Rosetta web exercise, and thank you for your the time. The purpose of these exercises is to establish your overall coding style and abilities.
+Welcome to the Rosetta web exercise, and thank you for your the time. The purpose of these exercises is to establish your overall coding style and abilities. We expect this task to be completed within 4 business days. If you are not able to complete the project that timeframe please let us know.
 
 ### Requirements
 * Adobe Photoshop (you can download a free trial here http://www.photoshop.com/products)
