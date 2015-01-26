@@ -26,10 +26,10 @@ You're welcome to use whatever libraries, build tools, editors you choose, to de
 Use a free trial from http://www.browserstack.com/ if you do not have access to any platform listed above.
 
 ### Team Members
-matthildenbrand
+[matthildenbrand](https://github.com/matthildenbrand)
 
-chrishoage
+[chrishoage](https://github.com/chrishoage)
 
-barrypeterson
+[barrypeterson](https://github.com/barrypeterson)
 
 _From within your repo on github: Settings > Collaborators > Add Collaborator_
