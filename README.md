@@ -2,7 +2,7 @@
 Welcome to the Rosetta web exercise, and thank you for your the time. The purpose of these exercises is to establish your overall coding style and abilities.
 
 ### Requirements
-* Adobe Photoshop
+* Adobe Photoshop (you can download a free trial here http://www.photoshop.com/products)
 * Git (command line preferred)
 
 ### Steps
