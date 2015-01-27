@@ -13,7 +13,7 @@ Welcome to the Rosetta web exercise, and thank you for your the time. The purpos
 5. Hand-off completed project to team
 
 ### Notes
-You're welcome to use whatever libraries, build tools, editors you choose, to deliver the best, most easily maintainable product. Try to replicate the functionality and amimations as closley as you can to the sample video. If you have any questions regarding the project please reach out to us via email.
+You're welcome to use whatever libraries, build tools, editors you choose, to deliver the best, most easily maintainable product. Try to replicate the functionality and amimations in the sample video as closely as possible. If you have any questions regarding the project please reach out to us via email.
 
 ### Browser Support
 * IE9+
