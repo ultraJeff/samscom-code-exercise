@@ -10,17 +10,19 @@ define([
 				return window.JST["menu.html"];
 			},
 			events:{
-				"click li": "goto"
+				"click nav button": "goto",
+				"mouseover nav button": "showPopup",
+				"mouseout nav button": "hidePopup"
 			},
 			onRender: function(){
-				this.menuOpts = this.$el.find("ul.nav li");
+				this.menuOpts = this.$el.find("nav li button");
 			},
 			goto: function(e){
 				var elem = this.$(e.target),
-					option = elem.attr("href").substr(1);
+					option = elem.data("href");
 				e.preventDefault();
 				this.menuOpts.removeClass("active");
-				elem.parent().addClass("active");
+				elem.addClass("active");
 				switch(option){
 					case "home":
 						this.app.showHome();
@@ -35,6 +37,14 @@ define([
 						this.app.showDisplay();
 						break;
 				}
+			},
+			showPopup: function(e){
+				var elem = this.$(e.target);
+				elem.siblings('p').css('opacity', 1);
+			},
+			hidePopup: function(e) {
+				var elem = this.$(e.target);
+				elem.siblings('p').css('opacity', 0);
 			}
 		});
 		return Menu;

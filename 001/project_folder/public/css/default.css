@@ -1,77 +1,115 @@
-.centered {
-  margin-left: auto;
-  margin-right: auto;
+@font-face {
+  font-family: 'samscon-italic';
+  src: url("./fonts/samscon/samsungif_it-webfont.eot");
+  src: url("./fonts/samscon/samsungif_it-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/samscon/samsungif_it-webfont.woff") format("woff"), url("./fonts/samscon/samsungif_it-webfont.ttf") format("truetype"), url("./fonts/samscon/samsungif_it-webfont.svg#InterfaceI") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
-.rounded {
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  border-radius: 100px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
+@font-face {
+  font-family: 'samscon';
+  src: url("./fonts/samscon/samsungif_rg-webfont.eot");
+  src: url("./fonts/samscon/samsungif_rg-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/samscon/samsungif_rg-webfont.woff") format("woff"), url("./fonts/samscon/samsungif_rg-webfont.ttf") format("truetype"), url("./fonts/samscon/samsungif_rg-webfont.svg#InterfaceR") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
-li.indicator {
+@font-face {
+  font-family: 'samscon-bold';
+  src: url("./fonts/samscon/samsungif_bd-webfont.eot");
+  src: url("./fonts/samscon/samsungif_bd-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/samscon/samsungif_bd-webfont.woff") format("woff"), url("./fonts/samscon/samsungif_bd-webfont.ttf") format("truetype"), url("./fonts/samscon/samsungif_bd-webfont.svg#InterfaceB") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'samscon-boldItalic';
+  src: url("./fonts/samscon/samsungif_bdit-webfont.eot");
+  src: url("./fonts/samscon/samsungif_bdit-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/samscon/samsungif_bdit-webfont.woff") format("woff"), url("./fonts/samscon/samsungif_bdit-webfont.ttf") format("truetype"), url("./fonts/samscon/samsungif_bdit-webfont.svg#InterfaceBI") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'samscon-black';
+  src: url("./fonts/samscon/samsungif_blk-webfont.eot");
+  src: url("./fonts/samscon/samsungif_blk-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/samscon/samsungif_blk-webfont.woff") format("woff"), url("./fonts/samscon/samsungif_blk-webfont.ttf") format("truetype"), url("./fonts/samscon/samsungif_blk-webfont.svg#InterfaceBlk") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.droplet-nav ul {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+}
+.droplet-nav li.indicator {
   position: relative;
+  text-align: center;
+}
+.droplet-nav li.indicator button {
   cursor: pointer;
-  list-style-type: none;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  transition: all 0.3s;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
   border: 2px solid #20a2ff;
-  height: 15px;
-  width: 15px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  border-radius: 100px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  margin-left: auto;
-  margin-right: auto;
+  height: 16px;
+  width: 16px;
+  background-color: transparent;
+  color: transparent;
+  -webkit-appearance: none;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
 }
-li.indicator.main {
-  height: 30px;
-  width: 30px;
+.droplet-nav li.indicator button.main {
+  height: 32px;
+  width: 32px;
 }
-li.indicator.main:before {
-  margin-top: 0;
-}
-li.indicator.main:after {
-  top: .25em;
-}
-li.indicator.active {
+.droplet-nav li.indicator button.active {
   background-color: #20a2ff;
 }
-li.indicator:hover {
-  -webkit-transform: scale(1.25);
-  -moz-transform: scale(1.25);
-  -ms-transform: scale(1.25);
-  -o-transform: scale(1.25);
+.droplet-nav li.indicator button:hover {
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
 }
-li.indicator a {
-  color: transparent;
+.droplet-nav li.indicator button:focus {
+  outline: 0;
 }
 .popover-tag {
+  font-family: samscon, Arial, Helvetica, sans-serif;
   position: absolute;
-}
-.popover-tag:before {
-  content: "";
-  display: inline-block;
-  margin-top: -1em;
-  width: 50px;
-  height: 15px;
-  color: #NaNNaNNaNee;
-  margin-left: -60px;
-  background-color: #20a2ff;
-  padding: 7.5px;
+  top: 0;
+  left: -5px;
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  -webkit-opacity: 0;
+  opacity: 0;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  filter: alpha(opacity=0);
+  padding: 3px 10px;
+  vertical-align: middle;
+  font-size: 0.8em;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: #FFF;
+  background: #20a2ff;
+  -webkit-transform: translate(-100%, 45%);
+  -moz-transform: translate(-100%, 45%);
+  -ms-transform: translate(-100%, 45%);
+  -o-transform: translate(-100%, 45%);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
 }
 .popover-tag:after {
   content: "";
-  border: 7.5px solid transparent;
+  border: 8px solid transparent;
   border-left-color: #20a2ff;
   background: transparent;
   margin-top: 0px;
   position: absolute;
-  top: 0;
-  left: -15px;
+  top: 0.4em;
+  right: -16px;
 }
