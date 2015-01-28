@@ -1,10 +1,12 @@
 define([
 	"spa/Layout",
 	"spa/Menu",
-	"spa/Hello",
-	"spa/Login"
+	"spa/View-Home",
+	"spa/View-Notifications",
+	"spa/View-SPen",
+	"spa/View-Display"
 	], 
-	function(Layout, Menu, Hello, Login){
+	function(Layout, Menu, ViewHome, ViewNotifications, ViewSPen, ViewDisplay){
 	var App = Backbone.Marionette.Application.extend({
 		init: function(){
 			this.layout = new Layout();
@@ -12,15 +14,27 @@ define([
 			this.layout.menu.show(new Menu({
 				app: this
 			}));
-			this.layout.content.show(new Hello());
+			this.layout.content.show(new ViewHome());
 		},
-		showLoginForm: function(){
-			this.layout.content.show(new Login({
+		showHome: function(){
+			this.layout.content.show(new ViewHome({
 				app: this
 			}));
 		},
-		showHome: function(){
-			this.layout.content.show(new Hello());
+		showNotifications: function(){
+			this.layout.content.show(new ViewNotifications({
+				app: this
+			}));
+		},
+		showSPen: function(){
+			this.layout.content.show(new ViewSPen({
+				app: this
+			}));
+		},
+		showDisplay: function(){
+			this.layout.content.show(new ViewDisplay({
+				app: this
+			}));
 		},
 		login: function(username, password, cbError, cbSuccess){
 			var app = this,

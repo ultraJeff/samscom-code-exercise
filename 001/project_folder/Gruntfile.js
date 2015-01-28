@@ -117,12 +117,18 @@ module.exports = function(grunt) {
             files: {
                 "public/css/vendor/bootstrap.css": "src/client/styles/bootstrap/less/bootstrap.less"
             }
+        },
+        compile: {
+            files: {
+                "public/css/default.css": "src/client/styles/default.less"
+            }
         }
     },
     cssmin: {
         compress: {
             files: {
-               "public/css/vendor/bootstrap.min.css": ["public/css/vendor/bootstrap.css"]
+               "public/css/vendor/bootstrap.min.css": ["public/css/vendor/bootstrap.css"],
+               "public/css/default.min.css": ["public/css/default.css"]
             }
         }
     }
@@ -142,7 +148,7 @@ module.exports = function(grunt) {
   grunt.registerTask(
     "default", 
     [
-      "clean:build", "jshint", "jst", "copy:spa"
+      "clean:build", "jshint", "jst", "copy:spa", "less:compile", "cssmin:compress"
     ]);
 
 };

@@ -22,11 +22,17 @@ define([
 				this.menuOpts.removeClass("active");
 				elem.parent().addClass("active");
 				switch(option){
-					case "login":
-						this.app.showLoginForm();
-						break;
 					case "home":
 						this.app.showHome();
+						break;
+					case "notifications":
+						this.app.showNotifications();
+						break;
+					case "s-pen":
+						this.app.showSPen();
+						break;
+					case "display":
+						this.app.showDisplay();
 						break;
 				}
 			}
