@@ -11,13 +11,18 @@ define([
 			template: function() {
 				return window.JST["view-home.html"];
 			},
+			onAttach: function() {
+				$(this.el).addClass('animated fadeIn');
+				setTimeout(function() {
+					$('.animate-img').addClass('fire');
+				}, 250);
+			},
+			onDestroy: function() {
+
+			},
 			events: {
 				'mouseover #home-nav button':"rotateArrowDown",
 				'mouseleave #home-nav button':"rotateArrowSide"
-			},
-			onRender: function() {
-				console.log(this);
-				$(this).slideDown();
 			},
 			rotateArrowDown: function(e) {
 				var elem = this.$(e.target);

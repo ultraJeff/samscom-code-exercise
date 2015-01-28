@@ -102,10 +102,10 @@ button:focus {
   -moz-transform: translate(36%, 10%);
   -ms-transform: translate(36%, 10%);
   -o-transform: translate(36%, 10%);
-  -moz-transition-delay: 0.5s;
-  -o-transition-delay: 0.5s;
-  -webkit-transition-delay: 0.5s;
-  transition-delay: 0.5s;
+  -moz-transition-delay: 0.25s;
+  -o-transition-delay: 0.25s;
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
 }
 .view-home-container > div .animate-img.animate-img-gear.fire {
   -webkit-transform: translate(36%, 0);
@@ -120,10 +120,10 @@ button:focus {
   -moz-transform: translate(-50%, 10%);
   -ms-transform: translate(-50%, 10%);
   -o-transform: translate(-50%, 10%);
-  -moz-transition-delay: 0.25s;
-  -o-transition-delay: 0.25s;
-  -webkit-transition-delay: 0.25s;
-  transition-delay: 0.25s;
+  -moz-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
 }
 .view-home-container > div .animate-img.animate-img-note-4.fire {
   -webkit-transform: translate(-50%, 0);

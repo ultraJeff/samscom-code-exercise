@@ -15,6 +15,7 @@ define([
 				"mouseout nav button": "hidePopup"
 			},
 			onRender: function(){
+				console.log("Menu has rendered");
 				this.menuOpts = this.$el.find("nav li button");
 			},
 			goto: function(e){

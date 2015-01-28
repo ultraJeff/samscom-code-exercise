@@ -143,6 +143,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-contrib-jst");
   grunt.loadNpmTasks("grunt-contrib-copy");
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-browserify');
 
   // Default task(s).
   grunt.registerTask(

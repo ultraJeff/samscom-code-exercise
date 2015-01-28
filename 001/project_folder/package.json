@@ -1,5 +1,5 @@
 {
-  "name": "Samscom Code Exercise",
+  "name": "Samscom-Code-Exercise",
   "version": "0.0.1",
   "author": "Jeff Franklin <jrobertfranklin@gmail.com>",
   "description": "A sample app page for Samscom Corp. advertising their latest products",
@@ -21,6 +21,7 @@
   ],
   "dependencies": {
     "animate.css": "^3.1.1",
+    "backbone.marionette": "~2.3.1",
     "express": "~3.1.0"
   },
   "devDependencies": {

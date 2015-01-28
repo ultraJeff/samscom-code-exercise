@@ -5,10 +5,6 @@ define(["spa/App"], function(App){
 		"mainRegion": "#application"
 	});
 
-	app.addInitializer(function(){
-		this.init();
-	});
-
 	app.start();
 
 	return app;

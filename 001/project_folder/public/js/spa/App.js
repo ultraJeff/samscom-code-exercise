@@ -8,20 +8,18 @@ define([
 	], 
 	function(Layout, Menu, ViewHome, ViewNotifications, ViewSPen, ViewDisplay){
 	var App = Backbone.Marionette.Application.extend({
-		init: function(){
+		onStart: function(){
 			this.layout = new Layout();
 			this.mainRegion.show(this.layout);
 			this.layout.menu.show(new Menu({
 				app: this
 			}));
 			this.layout.content.show(new ViewHome());
-			this.fireGraphics();
 		},
 		showHome: function(){
 			this.layout.content.show(new ViewHome({
 				app: this
 			}));
-			this.fireGraphics();
 		},
 		showNotifications: function(){
 			this.layout.content.show(new ViewNotifications({
@@ -37,9 +35,6 @@ define([
 			this.layout.content.show(new ViewDisplay({
 				app: this
 			}));
-		},
-		fireGraphics: function(){
-			$('.animate-img').addClass('fire');
 		},
 		login: function(username, password, cbError, cbSuccess){
 			var app = this,

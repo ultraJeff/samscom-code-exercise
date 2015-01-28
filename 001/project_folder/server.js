@@ -1,7 +1,5 @@
 var config = require("./config.json"),
 	express = require("express"),
-	routes = require("./routes.js"),
-	dbs = require("./libs/connectDbs.js"),
 	app = express();
 
 config.server.port = process.env.PORT || config.server.port;
@@ -29,15 +27,5 @@ app.configure("development", function() {
     }));
 });
 
-dbs.connect(config.dbs, function(errs, clients){
-	var db;
-	if(errs){
-		for(db in errs){
-			console.log("Error: db[" + db + "] " + errs[db]);
-		}
-	}else{
-		routes.load(app, clients);
-		app.listen(config.server.port);
-		console.log("App listening on port: " + config.server.port);
-	}
-});
+app.listen(config.server.port);
+console.log("App listening on port: " + config.server.port);
