@@ -15,11 +15,13 @@ define([
 				app: this
 			}));
 			this.layout.content.show(new ViewHome());
+			this.fireGraphics();
 		},
 		showHome: function(){
 			this.layout.content.show(new ViewHome({
 				app: this
 			}));
+			this.fireGraphics();
 		},
 		showNotifications: function(){
 			this.layout.content.show(new ViewNotifications({
@@ -35,6 +37,9 @@ define([
 			this.layout.content.show(new ViewDisplay({
 				app: this
 			}));
+		},
+		fireGraphics: function(){
+			$('.animate-img').addClass('fire');
 		},
 		login: function(username, password, cbError, cbSuccess){
 			var app = this,

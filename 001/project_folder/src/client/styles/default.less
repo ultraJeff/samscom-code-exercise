@@ -1,9 +1,10 @@
+/*Set Up*/
 @samscon-blue: #20A2FF;
 @base-height: 16px;
 @base-width: 16px;
 @main-scale: 1.15;
 @base-speed: 0.2s;
-@path-fonts: './fonts/samscon';
+@path-fonts: '../fonts/samscon';
 @font-face {
   font-family: 'samscon-italic';
   src: url("@{path-fonts}/samsungif_it-webfont.eot");
@@ -45,11 +46,90 @@
 .font-regular() {
   font-family: samscon, Arial, Helvetica, sans-serif;
 }
+button {
+  -webkit-appearance: none;
+  background:transparent;
+  border:0;
+  &:focus {
+    outline:0;
+  }
+}
+/*Home View*/
+.view-home-container {
+  max-width:1572px;
+  max-height:789px;
+  width:100%;
+  position:absolute;
+  left:0;
+  top:0;
+  height:100%;
+  background-image:url('../img/A/BG_A.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  .transform(translate3d(0,0,0));
+  >div {
+    position:relative;
+    height:100%;
+    .animate-img {
+      position:absolute;
+      bottom:0;
+      left:50%;
+      width:30%;
+      .transition(all (@base-speed * 2.5) ease);
+      .opacity(0);
+      &.animate-img-edge {
+        max-width:427px;
+        z-index:3;
+        .translate(-140%, 10%);
+        &.fire {
+          .translate(-140%, 0);
+        }
+      }
+      &.animate-img-gear {
+        max-width:378px;
+        z-index:1;
+        .translate(36%, 10%);
+        .transition-delay(0.5s);
+        &.fire {
+          .translate(36%, 0);
+        }
+      }
+      &.animate-img-note-4 {
+        max-width:454px;
+        z-index:2;
+        .translate(-50%, 10%);
+        .transition-delay(0.25s);
+        &.fire {
+          .translate(-50%, 0);
+        }
+      }
+      &.fire {
+        .opacity(1);
+      }
+    }
+  }
+}
+.nav-arrow {
+  background-image:url('../img/white-arrow.png');
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  width:44px;
+  height:44px;
+  display:inline-block;
+  vertical-align:middle;
+  .transition(all @base-speed);
+  &.hovered {
+    .rotate(90deg);
+  }
+}
+/*Navigation*/
 .droplet-nav {
   ul {
     position:absolute;
     right:5%;
     top:50%;
+    z-index:5;
   }
   li.indicator {
     position:relative;
@@ -64,7 +144,6 @@
       width: @base-width;
       background-color:transparent;
       color:transparent;
-       -webkit-appearance: none;
       .border-radius(30px);
       &.main {
         height: @base-height * 2;
@@ -108,6 +187,7 @@
     right:-@base-width;
   }
 }
+/*Prefixing*/
 .border-radius (@radius: 5px) {
 	-webkit-border-radius: @radius;
 	-moz-border-radius:    @radius;
@@ -149,11 +229,18 @@
 	-ms-transition:     @transition; 
 	-o-transition:      @transition;  
 }
+.transition-delay(@delay) {
+  -moz-transition-delay: @delay;
+  -o-transition-delay: @delay;
+  -webkit-transition-delay: @delay;
+  transition-delay: @delay;
+}
 .transform(@string){
 	-webkit-transform: @string;
 	-moz-transform: 	 @string;
 	-ms-transform: 		 @string;
 	-o-transform: 		 @string;
+  transform:         @string;
 }
 .scale (@factor) {
 	-webkit-transform: scale(@factor);

@@ -10,7 +10,7 @@ this["JST"]["menu.html"] = function(obj) {obj || (obj = {});var __t, __p = '', _
 
 this["JST"]["view-display.html"] = function(obj) {obj || (obj = {});var __t, __p = '', __e = _.escape;with (obj) {__p += '<h1>Display Stub</h1>';}return __p};
 
-this["JST"]["view-home.html"] = function(obj) {obj || (obj = {});var __t, __p = '', __e = _.escape;with (obj) {__p += '<h1>Home</h1>';}return __p};
+this["JST"]["view-home.html"] = function(obj) {obj || (obj = {});var __t, __p = '', __e = _.escape;with (obj) {__p += '<div>\r\n\t<nav id="home-nav">\r\n\t\t<div>\r\n\t\t\t<button type="button" data-href="notifications">\r\n\t\t\t\t<img src="img/edge_title.png" alt="Samsung Galaxy Note Edge">\r\n\t\t\t\t<span role="button" class="nav-arrow"></span>\r\n\t\t\t</button>\r\n\t\t</div>\r\n\t\t<div>\r\n\t\t\t<button type="button" data-href="#">\r\n\t\t\t\t<img src="img/note_4_title.png" alt="Samsung Galaxy Note 4">\r\n\t\t\t\t<span role="button" class="nav-arrow"></span>\r\n\t\t\t</button>\r\n\t\t</div>\r\n\t\t<div>\r\n\t\t\t<button type="button" data-href="#">\r\n\t\t\t\t<img src="img/gear_s_title.png" alt="Samsung Gear S">\r\n\t\t\t\t<span role="button" class="nav-arrow"></span>\r\n\t\t\t</button>\r\n\t\t</div>\r\n\t</nav>\r\n\t<img class="animate-img animate-img-edge" src="img/A/TB_black_v_left.png" alt="Samsung Galaxy Note Edge">\r\n\t<img class="animate-img animate-img-gear" src="img/A/Gear_S_v_right.png" alt="Samsung Gear S">\r\n\t<img class="animate-img animate-img-note-4" src="img/A/TR_black_v_front.png" alt="Samsung Galaxy Note 4">\r\n</div>';}return __p};
 
 this["JST"]["view-notifications.html"] = function(obj) {obj || (obj = {});var __t, __p = '', __e = _.escape;with (obj) {__p += '<h1>Notifications Stub</h1>';}return __p};
 
