@@ -1,0 +1,43 @@
+{
+  "name": "Samscom Code Exercise",
+  "version": "0.0.1",
+  "author": "Jeff Franklin <jrobertfranklin@gmail.com>",
+  "description": "A sample app page for Samscom Corp. advertising their latest products",
+  "contributors": [
+    {
+      "name": "Jeff Franklin ",
+      "email": "jrobertfranklin@gmail.com",
+      "web": "http://jefrfranklin.com/"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ultraJeff/samscom-code-exercise.git"
+  },
+  "keywords": [
+    "samscom",
+    "code",
+    "exercise"
+  ],
+  "dependencies": {
+    "animate.css": "^3.1.1",
+    "express": "~3.1.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.3.0",
+    "grunt-contrib-concat": "~0.1.3",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-less": "~0.5.0",
+    "grunt-contrib-cssmin": "~0.5.0",
+    "mocha": "~1.11.0",
+    "chai": "~1.6.1",
+    "grunt-contrib-jst": "~0.5.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-clean": "~0.4.1"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.6"
+  }
+}
