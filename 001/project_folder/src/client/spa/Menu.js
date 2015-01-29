@@ -1,12 +1,12 @@
 define([
 	"spa/templates"
 	],
-	function(templates){
+	function(templates) {
 		var Menu = Backbone.Marionette.ItemView.extend({
-			initialize: function(){
+			initialize: function() {
 				this.app = this.options.app;
 			},
-			template: function(){
+			template: function() {
 				return window.JST["menu.html"];
 			},
 			events:{
@@ -14,17 +14,20 @@ define([
 				"mouseover nav button": "showPopup",
 				"mouseout nav button": "hidePopup"
 			},
-			onRender: function(){
+			onRender: function() {
 				console.log("Menu has rendered");
 				this.menuOpts = this.$el.find("nav li button");
 			},
-			goto: function(e){
+			onDestroy: function() {
+				console.log("Menu has been destroyed");
+			},
+			goto: function(e) {
 				var elem = this.$(e.target),
 					option = elem.data("href");
 				e.preventDefault();
 				this.menuOpts.removeClass("active");
 				elem.addClass("active");
-				switch(option){
+				switch(option) {
 					case "home":
 						this.app.showHome();
 						break;
@@ -39,7 +42,7 @@ define([
 						break;
 				}
 			},
-			showPopup: function(e){
+			showPopup: function(e) {
 				var elem = this.$(e.target);
 				elem.siblings('p').css('opacity', 1);
 			},

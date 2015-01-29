@@ -12,8 +12,14 @@ define([
 			events: {
 
 			},
+			onBeforeRender: function() {
+				$('.droplet-nav button')
+					.removeClass('active')
+					.filter('[data-href="notifications"]')
+					.addClass('active');
+			},
 			onRender: function() {
-
+				$('#menu').css({ opacity : 1 });
 			}
 		});
 		return ViewNotifications;

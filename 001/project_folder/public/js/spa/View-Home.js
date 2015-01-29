@@ -2,9 +2,10 @@ define([
 	"spa/templates"
 	],
 	function(templates) {
+		var timer;
 		var ViewHome = Backbone.Marionette.ItemView.extend({
-			tagName : 'section',
-			className : 'view-home-container',
+			tagName : "section",
+			className : "view-home-container",
 			initialize: function() {
 				this.app = this.options.app;
 			},
@@ -12,25 +13,36 @@ define([
 				return window.JST["view-home.html"];
 			},
 			onAttach: function() {
-				$(this.el).addClass('animated fadeIn');
+				$(this.el).addClass("animated fadeIn");
 				setTimeout(function() {
-					$('.animate-img').addClass('fire');
+					$(".animate-img").addClass("fire");
 				}, 250);
 			},
-			onDestroy: function() {
-
+			onBeforeRender: function() {
+				$('#menu').css({ opacity : 0 });
 			},
 			events: {
-				'mouseover #home-nav button':"rotateArrowDown",
-				'mouseleave #home-nav button':"rotateArrowSide"
+				"mouseenter #home-nav>div":"rotateArrowDown",
+				"mouseleave #home-nav>div":"rotateArrowSide",
+				"click #home-nav button":"goto"
 			},
 			rotateArrowDown: function(e) {
-				var elem = this.$(e.target);
-				elem.find('.nav-arrow').addClass('hovered');
+				timer = setTimeout(function() {
+					var elem = this.$(e.target);
+					elem.parent().find(".nav-arrow").addClass("hovered");
+				}, 100);
 			},
 			rotateArrowSide: function(e) {
-				var elem = this.$(e.target);
-				elem.find('.nav-arrow').removeClass('hovered');
+				clearTimeout(timer);
+				$(".nav-arrow").removeClass("hovered");
+			},
+			goto: function(e) {
+				var elem = $(e.currentTarget);
+				switch(elem.data('href')) {
+					case "notifications":
+						this.app.showNotifications();
+						break;
+				}
 			}
 		});
 		return ViewHome;
