@@ -9,7 +9,7 @@ define([
 	function(Layout, Menu, ViewHome, ViewNotifications, ViewSPen, ViewDisplay){
 	var rm = new Backbone.Marionette.RegionManager();
 	var region = rm.addRegions({
-		mainRegion: "#application"
+		mainRegion: "#galaxy-app"
 	});
 	var App = Backbone.Marionette.Application.extend({
 		onStart: function(){

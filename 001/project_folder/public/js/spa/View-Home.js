@@ -19,7 +19,8 @@ define([
 				}, 250);
 			},
 			onBeforeRender: function() {
-				$('#menu').css({ opacity : 0 });
+				//IE is having trouble fading out the menu
+				$('#menu').css({opacity: 0}).hide();
 			},
 			events: {
 				"mouseenter #home-nav>div":"rotateArrowDown",

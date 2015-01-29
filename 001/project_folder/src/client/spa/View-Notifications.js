@@ -19,7 +19,8 @@ define([
 					.addClass('active');
 			},
 			onRender: function() {
-				$('#menu').css({ opacity : 1 });
+				//IE is having trouble fading in the menu
+				$('#menu').css({ opacity : 1 }).show();
 			}
 		});
 		return ViewNotifications;
