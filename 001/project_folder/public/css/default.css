@@ -42,6 +42,7 @@ h4,
 h5,
 h6,
 p,
+a,
 span {
   font-family: samscon, Arial, Helvetica, sans-serif;
   color: #FFF;
@@ -54,7 +55,7 @@ button {
 button:focus {
   outline: 0;
 }
-/*Containers*/
+/*Galaxy App*/
 #galaxy-app {
   position: absolute;
   top: 50%;
@@ -377,6 +378,77 @@ button:focus {
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
+}
+#galaxy-app .device-slide-2 .device-copy {
+  max-width: 750px;
+  text-align: center;
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  top: 8%;
+}
+#galaxy-app .device-slide-2 .device-copy h1 {
+  font-size: 4em;
+  font-weight: normal;
+  line-height: 1em;
+}
+#galaxy-app .device-slide-2 .device-copy p {
+  font-size: 1.2em;
+  margin-top: 12px;
+  line-height: 1.6em;
+}
+#galaxy-app .device-slide-2 .device-copy .buy-now {
+  padding: 15px 50px;
+  border: 1px solid #20A2FF;
+  text-transform: uppercase;
+  font-weight: 800;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 5%;
+  -webkit-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -ms-transition: 0.25s all;
+  -o-transition: 0.25s all;
+  transition: 0.25s all;
+  color: #FFF;
+  background-color: #20a2ff;
+  margin-right: 20px;
+}
+#galaxy-app .device-slide-2 .device-copy .buy-now:hover {
+  color: #20a2ff;
+  background-color: inherit;
+  text-decoration: none;
+}
+#galaxy-app .device-slide-2 .device-copy .learn-more {
+  padding: 15px 50px;
+  border: 1px solid #20A2FF;
+  text-transform: uppercase;
+  font-weight: 800;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 5%;
+  -webkit-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -ms-transition: 0.25s all;
+  -o-transition: 0.25s all;
+  transition: 0.25s all;
+  color: #20a2ff;
+}
+#galaxy-app .device-slide-2 .device-copy .learn-more:hover {
+  color: #FFF;
+  background-color: #20a2ff;
+  text-decoration: none;
+}
+#galaxy-app .device-slide-2 .device-image {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0) scale(1.2);
 }
 #galaxy-app #menu {
   display: none;

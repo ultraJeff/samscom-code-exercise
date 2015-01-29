@@ -54,7 +54,7 @@
   left:50%;
   .translate(-50%,0);
 }
-html, h1, h2, h3, h4, h5, h6, p, span {
+html, h1, h2, h3, h4, h5, h6, p, a, span {
   .font-regular();
   color:#FFF;
 }
@@ -263,6 +263,62 @@ button {
     }
   }
   /*Notifications*/
+  .device-slide-2 {
+    .device-copy {
+      max-width:750px;
+      text-align:center;
+      position:absolute;
+      z-index:5;
+      .h-center();
+      top:8%;
+      h1 {
+        font-size:@h1-size;
+        font-weight:normal;
+        line-height:1em;
+      }
+      p {
+        font-size:1.2em;
+        margin-top:12px;
+        line-height:1.6em;
+      }
+      .buy-now {
+        .button;
+        color:#FFF;
+        background-color:@samscon-blue;
+        margin-right:20px;
+        &:hover {
+          color:@samscon-blue;
+          background-color:inherit;
+          text-decoration: none;
+        }
+      }
+      .learn-more {
+        .button;
+        color:@samscon-blue;
+        &:hover {
+          color:#FFF;
+          background-color:@samscon-blue;
+          text-decoration: none;
+        }
+      }
+      .button() {
+        padding: 15px 50px;
+        border: 1px solid #20A2FF;
+        text-transform: uppercase;
+        font-weight: 800;
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 5%;
+        .transition(0.25s all);
+      }
+    }
+    .device-image {
+      position:absolute;
+      bottom:0;
+      left:50%;
+      transform: translate3d(-50%,0,0) scale(1.2);
+    }
+  }
   /*Navigation*/
   #menu {
     display:none;
