@@ -72,6 +72,8 @@ button:focus {
 
   /*Notifications*/
 
+  /*S Pen*/
+
   /*Navigation*/
 
 }
@@ -402,7 +404,7 @@ button:focus {
   margin-top: 12px;
   line-height: 1.6em;
 }
-#galaxy-app .device-slide-2 .device-copy .buy-now {
+#galaxy-app .device-slide-2 .device-copy .pre-order {
   padding: 15px 50px;
   border: 1px solid #20A2FF;
   text-transform: uppercase;
@@ -419,7 +421,7 @@ button:focus {
   background-color: #20a2ff;
   margin-right: 20px;
 }
-#galaxy-app .device-slide-2 .device-copy .buy-now:hover {
+#galaxy-app .device-slide-2 .device-copy .pre-order:hover {
   color: #20a2ff;
   background-color: inherit;
   text-decoration: none;
@@ -448,7 +450,87 @@ button:focus {
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translate3d(-50%, 0, 0) scale(1.2);
+  -webkit-transform: translate3d(-50%, 0, 0);
+  -moz-transform: translate3d(-50%, 0, 0);
+  -ms-transform: translate3d(-50%, 0, 0);
+  -o-transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
+}
+#galaxy-app .device-slide-3 .device-copy {
+  max-width: 500px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  z-index: 5;
+}
+#galaxy-app .device-slide-3 .device-copy h1 {
+  font-size: 4em;
+  font-weight: normal;
+  line-height: 1em;
+}
+#galaxy-app .device-slide-3 .device-copy p {
+  font-size: 1.2em;
+  margin-top: 12px;
+  line-height: 1.6em;
+}
+#galaxy-app .device-slide-3 .device-copy .pre-order {
+  padding: 15px 50px;
+  border: 1px solid #20A2FF;
+  text-transform: uppercase;
+  font-weight: 800;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 5%;
+  -webkit-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -ms-transition: 0.25s all;
+  -o-transition: 0.25s all;
+  transition: 0.25s all;
+  color: #FFF;
+  background-color: #20a2ff;
+  margin-right: 20px;
+}
+#galaxy-app .device-slide-3 .device-copy .pre-order:hover {
+  color: #20a2ff;
+  background-color: inherit;
+  text-decoration: none;
+}
+#galaxy-app .device-slide-3 .device-copy .learn-more {
+  padding: 15px 50px;
+  border: 1px solid #20A2FF;
+  text-transform: uppercase;
+  font-weight: 800;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 5%;
+  -webkit-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -ms-transition: 0.25s all;
+  -o-transition: 0.25s all;
+  transition: 0.25s all;
+  color: #20a2ff;
+}
+#galaxy-app .device-slide-3 .device-copy .learn-more:hover {
+  color: #FFF;
+  background-color: #20a2ff;
+  text-decoration: none;
+}
+#galaxy-app .device-slide-3 .device-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 45%;
+  max-width: 567px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 #galaxy-app #menu {
   display: none;
