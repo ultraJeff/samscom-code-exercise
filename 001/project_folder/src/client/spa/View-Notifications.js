@@ -3,6 +3,8 @@ define([
 	],
 	function(templates) {
 		var ViewNotifications = Backbone.Marionette.ItemView.extend({
+			tagName: "section",
+			className : "device-slide-container-2",
 			initialize: function() {
 				this.app = this.options.app;
 			},
@@ -13,14 +15,14 @@ define([
 
 			},
 			onBeforeRender: function() {
-				$('.droplet-nav button')
-					.removeClass('active')
-					.filter('[data-href="notifications"]')
-					.addClass('active');
+				$(".droplet-nav button")
+					.removeClass("active")
+					.filter("[data-href='notifications']")
+					.addClass("active");
 			},
 			onRender: function() {
 				//IE is having trouble fading in the menu
-				$('#menu').css({ opacity : 1 }).show();
+				$("#menu").css({ opacity : 1 }).show();
 			}
 		});
 		return ViewNotifications;

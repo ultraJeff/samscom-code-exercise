@@ -3,6 +3,8 @@ define([
 	],
 	function(templates) {
 		var ViewSPen = Backbone.Marionette.ItemView.extend({
+			tagName: "section",
+			className : "device-slide-container-3",
 			initialize: function() {
 				this.app = this.options.app;
 			},

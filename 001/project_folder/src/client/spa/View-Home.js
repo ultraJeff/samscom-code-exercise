@@ -5,7 +5,7 @@ define([
 		var timer;
 		var ViewHome = Backbone.Marionette.ItemView.extend({
 			tagName : "section",
-			className : "view-home-container",
+			className : "device-slide-container-1",
 			initialize: function() {
 				this.app = this.options.app;
 			},
@@ -15,7 +15,7 @@ define([
 			onAttach: function() {
 				$(this.el).addClass("animated fadeIn");
 				setTimeout(function() {
-					$(".animate-img").addClass("fire");
+					$(".device-slide-1 > img").addClass("fire");
 				}, 250);
 			},
 			onBeforeRender: function() {

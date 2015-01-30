@@ -6,39 +6,39 @@ define([
 	"spa/View-SPen",
 	"spa/View-Display"
 	], 
-	function(Layout, Menu, ViewHome, ViewNotifications, ViewSPen, ViewDisplay){
+	function(Layout, Menu, ViewHome, ViewNotifications, ViewSPen, ViewDisplay) {
 	var rm = new Backbone.Marionette.RegionManager();
 	var region = rm.addRegions({
 		mainRegion: "#galaxy-app"
 	});
 	var App = Backbone.Marionette.Application.extend({
-		onStart: function(){
+		onStart: function() {
 			this.layout = new Layout();
 			region.mainRegion.show(this.layout);
-			this.layout.content.show(new ViewHome({
+			this.layout.getRegion("content").show(new ViewHome({
 				app: this
 			}));
-			this.layout.menu.show(new Menu({
-				app: this
-			}));
-		},
-		showHome: function(){
-			this.layout.content.show(new ViewHome({
+			this.layout.getRegion("menu").show(new Menu({
 				app: this
 			}));
 		},
-		showNotifications: function(){
-			this.layout.content.show(new ViewNotifications({
+		showHome: function() {
+			this.layout.getRegion("content").show(new ViewHome({
 				app: this
 			}));
 		},
-		showSPen: function(){
-			this.layout.content.show(new ViewSPen({
+		showNotifications: function() {
+			this.layout.getRegion("content").show(new ViewNotifications({
 				app: this
 			}));
 		},
-		showDisplay: function(){
-			this.layout.content.show(new ViewDisplay({
+		showSPen: function() {
+			this.layout.getRegion("content").show(new ViewSPen({
+				app: this
+			}));
+		},
+		showDisplay: function() {
+			this.layout.getRegion("content").show(new ViewDisplay({
 				app: this
 			}));
 		}
