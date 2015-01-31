@@ -2,6 +2,8 @@ this["JST"] = this["JST"] || {};
 
 this["JST"]["hello.html"] = function(obj) {obj || (obj = {});var __t, __p = '', __e = _.escape;with (obj) {__p += '<h1>Hello App!</h1>';}return __p};
 
+this["JST"]["layout-mobile.html"] = function(obj) {obj || (obj = {});var __t, __p = '', __e = _.escape;with (obj) {__p += '<div class="app mobile">\r\n\t<div id="slide-1"></div>\r\n\t<div id="slide-2"></div>\r\n\t<div id="slide-3"></div>\r\n\t<div id="slide-4"></div>\r\n</div>';}return __p};
+
 this["JST"]["layout.html"] = function(obj) {obj || (obj = {});var __t, __p = '', __e = _.escape;with (obj) {__p += '<div class="app">\r\n\t<div id="menu"></div>\r\n\t<div id="content"></div>\r\n</div>';}return __p};
 
 this["JST"]["login.html"] = function(obj) {obj || (obj = {});var __t, __p = '', __e = _.escape;with (obj) {__p += '<div class="login form">\r\n  <div class="message">\r\n  </div>\r\n  <form class="form-horizontal">\r\n    <div class="control-group">\r\n      <label class="control-label" for="inputUsername">Username</label>\r\n      <div class="controls">\r\n        <input type="text" class="input username" id="inputUsername" placeholder="Username">\r\n      </div>\r\n    </div>\r\n    <div class="control-group">\r\n      <label class="control-label" for="inputPassword">Password</label>\r\n      <div class="controls">\r\n        <input type="password" class="input password" id="inputPassword" placeholder="Password">\r\n      </div>\r\n    </div>\r\n    <div class="control-group">\r\n      <div class="controls">\r\n        <button type="submit" class="btn login">Login</button>\r\n      </div>\r\n    </div>\r\n  </form>\r\n</div>';}return __p};

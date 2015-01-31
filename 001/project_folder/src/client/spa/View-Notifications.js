@@ -11,9 +11,6 @@ define([
 			template: function() {
 				return window.JST["view-notifications.html"];
 			},
-			events: {
-
-			},
 			onBeforeRender: function() {
 				$(".droplet-nav button")
 					.removeClass("active")
