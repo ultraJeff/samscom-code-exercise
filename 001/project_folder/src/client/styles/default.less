@@ -101,6 +101,22 @@ button {
   @media (min-width:1081px) and (max-width:1200px) {
     max-height:745px;
   }
+  #content {
+    @media (max-width: 750px) {
+      display:none;
+    }
+    @media (min-width: 751px) {
+      display:block;
+    }
+  }
+  #content-mobile {
+    @media (max-width: 750px) {
+      display:block;
+    }
+    @media (min-width: 751px) {
+      display:none;
+    }
+  }
   #device-slide-library {
     .pre-order() {
       .button;
@@ -128,6 +144,7 @@ button {
       border: 2px solid #20A2FF;
       text-transform: uppercase;
       font-weight: 800;
+      white-space: nowrap;
       display: inline-block;
       vertical-align: middle;
       margin-top: 20px;
@@ -192,6 +209,9 @@ button {
         &.gear {
           margin:0;
         }
+      }
+      .phone-row {
+        margin-top:30px;
       }
       .pre-order {
         #device-slide-library .pre-order;
@@ -557,7 +577,7 @@ button {
       background: transparent;
       margin-top:0px;
       position:absolute;
-      top:0.4em;
+      top:0.3em;
       right:-@base-width;
     }
   }

@@ -16,19 +16,15 @@ define([
 		onStart: function() {
 			this.layout = new Layout();
 			region.mainRegion.show(this.layout);
-			if ($(window).width() > 750) {
-				this.layout.getRegion("content").show(new ViewHome({
-					app: this
-				}));
-				this.layout.getRegion("menu").show(new Menu({
-					app: this
-				}));
-			}
-			else {
-				this.layout.getRegion("content").show(new ViewMobile({
-					app: this
-				}));
-			}
+			this.layout.getRegion("content").show(new ViewHome({
+				app: this
+			}));
+			this.layout.getRegion("menu").show(new Menu({
+				app: this
+			}));
+			this.layout.getRegion("contentMobile").show(new ViewMobile({
+				app: this
+			}));
 		},
 		showHome: function() {
 			this.layout.getRegion("content").show(new ViewHome({

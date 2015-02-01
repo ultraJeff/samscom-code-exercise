@@ -8,7 +8,8 @@ define([
 		  },
 		  regions: {
 		    menu: "#menu",
-		    content: "#content"
+		    content: "#content",
+		    contentMobile: "#content-mobile"
 		  }
 		});
 		return Layout;

@@ -109,6 +109,26 @@ button:focus {
     max-height: 745px;
   }
 }
+@media (max-width: 750px) {
+  #galaxy-app #content {
+    display: none;
+  }
+}
+@media (min-width: 751px) {
+  #galaxy-app #content {
+    display: block;
+  }
+}
+@media (max-width: 750px) {
+  #galaxy-app #content-mobile {
+    display: block;
+  }
+}
+@media (min-width: 751px) {
+  #galaxy-app #content-mobile {
+    display: none;
+  }
+}
 #galaxy-app #content {
   position: absolute;
   top: 0;
@@ -152,6 +172,9 @@ button:focus {
 }
 #galaxy-app .device-slide-container-mobile .device-slide-mobile .phone-title.gear {
   margin: 0;
+}
+#galaxy-app .device-slide-container-mobile .device-slide-mobile .phone-row {
+  margin-top: 30px;
 }
 #galaxy-app .device-slide-container-mobile .device-slide-mobile .pre-order {
   padding: 15px 50px;
@@ -563,6 +586,7 @@ button:focus {
   border: 2px solid #20A2FF;
   text-transform: uppercase;
   font-weight: 800;
+  white-space: nowrap;
   display: inline-block;
   vertical-align: middle;
   margin-top: 20px;
@@ -586,6 +610,7 @@ button:focus {
   border: 2px solid #20A2FF;
   text-transform: uppercase;
   font-weight: 800;
+  white-space: nowrap;
   display: inline-block;
   vertical-align: middle;
   margin-top: 20px;
@@ -630,6 +655,7 @@ button:focus {
   border: 2px solid #20A2FF;
   text-transform: uppercase;
   font-weight: 800;
+  white-space: nowrap;
   display: inline-block;
   vertical-align: middle;
   margin-top: 20px;
@@ -653,6 +679,7 @@ button:focus {
   border: 2px solid #20A2FF;
   text-transform: uppercase;
   font-weight: 800;
+  white-space: nowrap;
   display: inline-block;
   vertical-align: middle;
   margin-top: 20px;
@@ -701,6 +728,7 @@ button:focus {
   border: 2px solid #20A2FF;
   text-transform: uppercase;
   font-weight: 800;
+  white-space: nowrap;
   display: inline-block;
   vertical-align: middle;
   margin-top: 20px;
@@ -724,6 +752,7 @@ button:focus {
   border: 2px solid #20A2FF;
   text-transform: uppercase;
   font-weight: 800;
+  white-space: nowrap;
   display: inline-block;
   vertical-align: middle;
   margin-top: 20px;
@@ -832,7 +861,7 @@ button:focus {
   background: transparent;
   margin-top: 0px;
   position: absolute;
-  top: 0.4em;
+  top: 0.3em;
   right: -16px;
 }
 /*Prefixing*/
