@@ -17,7 +17,7 @@ define([
 			onRender: function() {
 			},
 			onAttach: function() {
-				$('#galaxy-app').height($('.device-slide-container-mobile').height());
+				//$('#galaxy-app').height($('.device-slide-container-mobile').height());
 			}
 		});
 		return ViewMobile;

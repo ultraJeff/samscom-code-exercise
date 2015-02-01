@@ -86,7 +86,7 @@ button:focus {
 @media (max-width: 750px) {
   #galaxy-app {
     max-height: none;
-    height: 1200px;
+    height: 1310px;
   }
 }
 @media (min-width: 751px) and (max-width: 815px) {
@@ -124,38 +124,171 @@ button:focus {
   vertical-align: super;
 }
 #galaxy-app .device-slide-container-mobile .device-slide-mobile .device-copy h1 {
-  display: inline-block;
-  vertical-align: middle;
-  white-space: nowrap;
-  font-size: 4em;
-  font-weight: normal;
-  line-height: 1em;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 15px;
-  border-right: 1px solid #505159;
+  font-size: 3.2em;
+  font-weight: normal;
 }
 #galaxy-app .device-slide-container-mobile .device-slide-mobile .device-copy h4 {
-  display: inline-block;
-  vertical-align: middle;
-  white-space: nowrap;
-  font-weight: normal;
-  color: #B5BDC0;
   font-size: 1.2em;
   font-family: samscon-italic;
-  padding-left: 15px;
+  font-weight: normal;
 }
-#galaxy-app .device-slide-container-mobile .device-slide-mobile .carousel-image-wrapper {
-  height: 335px;
-  overflow: hidden;
+#galaxy-app .device-slide-container-mobile .device-slide-mobile .phone-title {
+  margin: 10px 0;
+}
+#galaxy-app .device-slide-container-mobile .device-slide-mobile .phone-title button {
+  border: 2px solid white;
+  padding: 10px 35px;
+  height: 55px;
+  width: 70%;
+  max-width: 250px;
+  margin: auto;
+  display: block;
+}
+#galaxy-app .device-slide-container-mobile .device-slide-mobile .phone-title button img {
+  margin-left: auto;
+  margin-right: auto;
+}
+#galaxy-app .device-slide-container-mobile .device-slide-mobile .phone-title.gear {
+  margin: 0;
+}
+#galaxy-app .device-slide-container-mobile .device-slide-mobile .pre-order {
+  padding: 15px 50px;
+  width: 175px;
+  border: 2px solid #20A2FF;
+  text-transform: uppercase;
+  font-weight: 800;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 20px;
+  -webkit-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -ms-transition: 0.25s all;
+  -o-transition: 0.25s all;
+  transition: 0.25s all;
+  color: #FFF;
+  background-color: #20a2ff;
+  margin-right: 20px;
+  margin-right: 0;
+  white-space: nowrap;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#galaxy-app .device-slide-container-mobile .device-slide-mobile .pre-order:hover {
+  color: #20a2ff;
+  background-color: inherit;
+  text-decoration: none;
+}
+#galaxy-app .device-slide-container-mobile .device-slide-mobile .learn-more {
+  padding: 15px 50px;
+  width: 175px;
+  border: 2px solid #20A2FF;
+  text-transform: uppercase;
+  font-weight: 800;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 20px;
+  -webkit-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -ms-transition: 0.25s all;
+  -o-transition: 0.25s all;
+  transition: 0.25s all;
+  color: #20a2ff;
+  margin-right: 0;
+  white-space: nowrap;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#galaxy-app .device-slide-container-mobile .device-slide-mobile .learn-more:hover {
+  color: #FFF;
+  background-color: #20a2ff;
+  text-decoration: none;
 }
 #galaxy-app .device-slide-container-mobile .device-slide-mobile .mobile-copy-row {
   background: black;
   position: relative;
   z-index: 3;
+  padding-bottom: 30px;
 }
 #galaxy-app .device-slide-container-mobile .device-slide-mobile .mobile-copy-row:before {
   content: "";
+  width: 0;
+  height: 0;
+  border: none;
+  border-left: 18px solid transparent;
+  border-bottom: 20px solid #000;
+  border-right: 18px solid transparent;
+  position: absolute;
+  left: 47%;
+  top: -20px;
+}
+#galaxy-app .device-slide-container-mobile .device-slide-mobile #slide-carousel .carousel-image-wrapper {
+  height: 335px;
+  overflow: hidden;
+  position: relative;
+}
+#galaxy-app .device-slide-container-mobile .device-slide-mobile #slide-carousel img {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  margin-left: auto;
+  margin-right: auto;
+}
+#galaxy-app .device-slide-container-mobile .device-slide-mobile #slide-carousel img.img-notifications {
+  -webkit-transform: rotate(0) scale(1.3) skew(0) translate3d(0, -60%, 0);
+  -moz-transform: rotate(0) scale(1.3) skew(0) translate3d(0, -60%, 0);
+  -o-transform: rotate(0) scale(1.3) skew(0) translate3d(0, -60%, 0);
+  -ms-transform: rotate(0) scale(1.3) skew(0) translate3d(0, -60%, 0);
+  transform: rotate(0) scale(1.3) skew(0) translate3d(0, -60%, 0);
+}
+#galaxy-app .device-slide-container-mobile .device-slide-mobile #slide-carousel img.img-s-pen {
+  -webkit-transform: translate(-50%, -40%);
+  -moz-transform: translate(-50%, -40%);
+  -ms-transform: translate(-50%, -40%);
+  -o-transform: translate(-50%, -40%);
+  transform: translate(-50%, -40%);
+  left: 50%;
+  width: 60%;
+}
+#galaxy-app .device-slide-container-mobile .device-slide-mobile #slide-carousel img.img-display {
+  max-width: none;
+  width: 150%;
+  left: -50%;
+}
+#galaxy-app .device-slide-container-mobile .device-slide-mobile #slide-carousel .device-copy {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  height: 425px;
+}
+#galaxy-app .device-slide-container-mobile .device-slide-mobile .carousel-indicators {
+  top: 345px;
+  bottom: auto;
+}
+#galaxy-app .device-slide-container-mobile .device-slide-mobile .carousel-indicators li {
+  background-color: #FFF;
+  border: none;
+}
+#galaxy-app .device-slide-container-mobile .device-slide-mobile .carousel-indicators li.active {
+  background-color: #20a2ff;
+}
+#galaxy-app .device-slide-container-mobile .device-slide-mobile .carousel-indicators:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border: none;
+  border-left: 18px solid transparent;
+  border-bottom: 20px solid #000;
+  border-right: 18px solid transparent;
+  position: absolute;
+  left: 45%;
+  top: -30px;
 }
 #galaxy-app .device-slide-container-mobile .device-slide-mobile img.device-image-edge {
   position: relative;
@@ -169,20 +302,20 @@ button:focus {
 #galaxy-app .device-slide-container-mobile .device-slide-mobile img.device-image-gear {
   position: relative;
   z-index: 1;
-  -webkit-transform: translate3d(-35%, 0, 0);
-  -moz-transform: translate3d(-35%, 0, 0);
-  -ms-transform: translate3d(-35%, 0, 0);
-  -o-transform: translate3d(-35%, 0, 0);
-  transform: translate3d(-35%, 0, 0);
+  -webkit-transform: translate3d(-20%, 28%, 0);
+  -moz-transform: translate3d(-20%, 28%, 0);
+  -ms-transform: translate3d(-20%, 28%, 0);
+  -o-transform: translate3d(-20%, 28%, 0);
+  transform: translate3d(-20%, 28%, 0);
 }
 #galaxy-app .device-slide-container-mobile .device-slide-mobile img.device-image-note {
   position: relative;
   z-index: 2;
-  -webkit-transform: translate3d(-5%, 30%, 0);
-  -moz-transform: translate3d(-5%, 30%, 0);
-  -ms-transform: translate3d(-5%, 30%, 0);
-  -o-transform: translate3d(-5%, 30%, 0);
-  transform: translate3d(-5%, 30%, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 #galaxy-app .device-slide-container-1 .device-slide-1 .device-copy {
   text-align: center;
@@ -426,12 +559,13 @@ button:focus {
 }
 #galaxy-app .device-slide-2 .device-copy .pre-order {
   padding: 15px 50px;
+  width: 175px;
   border: 2px solid #20A2FF;
   text-transform: uppercase;
   font-weight: 800;
   display: inline-block;
   vertical-align: middle;
-  margin-top: 5%;
+  margin-top: 20px;
   -webkit-transition: 0.25s all;
   -moz-transition: 0.25s all;
   -ms-transition: 0.25s all;
@@ -448,12 +582,13 @@ button:focus {
 }
 #galaxy-app .device-slide-2 .device-copy .learn-more {
   padding: 15px 50px;
+  width: 175px;
   border: 2px solid #20A2FF;
   text-transform: uppercase;
   font-weight: 800;
   display: inline-block;
   vertical-align: middle;
-  margin-top: 5%;
+  margin-top: 20px;
   -webkit-transition: 0.25s all;
   -moz-transition: 0.25s all;
   -ms-transition: 0.25s all;
@@ -491,12 +626,13 @@ button:focus {
 }
 #galaxy-app .device-slide-3 .device-copy .pre-order {
   padding: 15px 50px;
+  width: 175px;
   border: 2px solid #20A2FF;
   text-transform: uppercase;
   font-weight: 800;
   display: inline-block;
   vertical-align: middle;
-  margin-top: 5%;
+  margin-top: 20px;
   -webkit-transition: 0.25s all;
   -moz-transition: 0.25s all;
   -ms-transition: 0.25s all;
@@ -513,12 +649,13 @@ button:focus {
 }
 #galaxy-app .device-slide-3 .device-copy .learn-more {
   padding: 15px 50px;
+  width: 175px;
   border: 2px solid #20A2FF;
   text-transform: uppercase;
   font-weight: 800;
   display: inline-block;
   vertical-align: middle;
-  margin-top: 5%;
+  margin-top: 20px;
   -webkit-transition: 0.25s all;
   -moz-transition: 0.25s all;
   -ms-transition: 0.25s all;
@@ -560,12 +697,13 @@ button:focus {
 }
 #galaxy-app .device-slide-4 .device-copy .pre-order {
   padding: 15px 50px;
+  width: 175px;
   border: 2px solid #20A2FF;
   text-transform: uppercase;
   font-weight: 800;
   display: inline-block;
   vertical-align: middle;
-  margin-top: 5%;
+  margin-top: 20px;
   -webkit-transition: 0.25s all;
   -moz-transition: 0.25s all;
   -ms-transition: 0.25s all;
@@ -582,12 +720,13 @@ button:focus {
 }
 #galaxy-app .device-slide-4 .device-copy .learn-more {
   padding: 15px 50px;
+  width: 175px;
   border: 2px solid #20A2FF;
   text-transform: uppercase;
   font-weight: 800;
   display: inline-block;
   vertical-align: middle;
-  margin-top: 5%;
+  margin-top: 20px;
   -webkit-transition: 0.25s all;
   -moz-transition: 0.25s all;
   -ms-transition: 0.25s all;
