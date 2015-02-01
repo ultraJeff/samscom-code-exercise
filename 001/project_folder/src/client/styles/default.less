@@ -101,7 +101,7 @@ button {
   @media (min-width:1081px) and (max-width:1200px) {
     max-height:745px;
   }
-  #content {
+  #content, #menu {
     @media (max-width: 750px) {
       display:none;
     }
@@ -369,10 +369,10 @@ button {
         &.device-image-gear {
           position:relative;
           z-index:1;
-          .translate3d(-35%, 10%, 0);
+          .translate3d(-25%, 42%, 0);
           .transition-delay(0.25s);
           &.fire {
-            .translate3d(-35%, 0, 0);
+            .translate3d(-25%, 32%, 0);
           }
         }
         &.device-image-note {
@@ -395,7 +395,7 @@ button {
       }
       .edge {
         margin-bottom: 1em;
-        margin-right: -1.5em;
+        margin-right: 2em;
         text-align:right;
         img {
           .translate3d(0, 0, 0);
@@ -429,9 +429,11 @@ button {
         z-index: 0;
       }
       .gear {
-        margin-bottom: 1em;
-        margin-left: -2em;
+        margin-bottom: -1em;
+        margin-left: -1em;
         text-align:left;
+        display:inline-block;
+        .translate(0,90%);
         img {
           .translate3d(0, 0, 0);
         }
@@ -490,7 +492,7 @@ button {
   .device-slide-3 {
     .device-copy {
       max-width:500px;
-      .translate(25%, 60%);
+      .translate(15%, 30%);
       z-index:5;
       h1 {
         #device-slide-library .h1;

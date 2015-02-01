@@ -110,12 +110,14 @@ button:focus {
   }
 }
 @media (max-width: 750px) {
-  #galaxy-app #content {
+  #galaxy-app #content,
+  #galaxy-app #menu {
     display: none;
   }
 }
 @media (min-width: 751px) {
-  #galaxy-app #content {
+  #galaxy-app #content,
+  #galaxy-app #menu {
     display: block;
   }
 }
@@ -409,22 +411,22 @@ button:focus {
 #galaxy-app .device-slide-container-1 .device-slide-1 img.device-image-gear {
   position: relative;
   z-index: 1;
-  -webkit-transform: translate3d(-35%, 10%, 0);
-  -moz-transform: translate3d(-35%, 10%, 0);
-  -ms-transform: translate3d(-35%, 10%, 0);
-  -o-transform: translate3d(-35%, 10%, 0);
-  transform: translate3d(-35%, 10%, 0);
+  -webkit-transform: translate3d(-25%, 42%, 0);
+  -moz-transform: translate3d(-25%, 42%, 0);
+  -ms-transform: translate3d(-25%, 42%, 0);
+  -o-transform: translate3d(-25%, 42%, 0);
+  transform: translate3d(-25%, 42%, 0);
   -webkit-transition-delay: 0.25s;
   -moz-transition-delay: 0.25s;
   -o-transition-delay: 0.25s;
   transition-delay: 0.25s;
 }
 #galaxy-app .device-slide-container-1 .device-slide-1 img.device-image-gear.fire {
-  -webkit-transform: translate3d(-35%, 0, 0);
-  -moz-transform: translate3d(-35%, 0, 0);
-  -ms-transform: translate3d(-35%, 0, 0);
-  -o-transform: translate3d(-35%, 0, 0);
-  transform: translate3d(-35%, 0, 0);
+  -webkit-transform: translate3d(-25%, 32%, 0);
+  -moz-transform: translate3d(-25%, 32%, 0);
+  -ms-transform: translate3d(-25%, 32%, 0);
+  -o-transform: translate3d(-25%, 32%, 0);
+  transform: translate3d(-25%, 32%, 0);
 }
 #galaxy-app .device-slide-container-1 .device-slide-1 img.device-image-note {
   position: relative;
@@ -465,7 +467,7 @@ button:focus {
 }
 #galaxy-app .device-slide-container-1 .device-slide-1 .edge {
   margin-bottom: 1em;
-  margin-right: -1.5em;
+  margin-right: 2em;
   text-align: right;
 }
 #galaxy-app .device-slide-container-1 .device-slide-1 .edge img {
@@ -515,9 +517,15 @@ button:focus {
   z-index: 0;
 }
 #galaxy-app .device-slide-container-1 .device-slide-1 .gear {
-  margin-bottom: 1em;
-  margin-left: -2em;
+  margin-bottom: -1em;
+  margin-left: -1em;
   text-align: left;
+  display: inline-block;
+  -webkit-transform: translate(0, 90%);
+  -moz-transform: translate(0, 90%);
+  -ms-transform: translate(0, 90%);
+  -o-transform: translate(0, 90%);
+  transform: translate(0, 90%);
 }
 #galaxy-app .device-slide-container-1 .device-slide-1 .gear img {
   -webkit-transform: translate3d(0, 0, 0);
@@ -632,11 +640,11 @@ button:focus {
 }
 #galaxy-app .device-slide-3 .device-copy {
   max-width: 500px;
-  -webkit-transform: translate(25%, 60%);
-  -moz-transform: translate(25%, 60%);
-  -ms-transform: translate(25%, 60%);
-  -o-transform: translate(25%, 60%);
-  transform: translate(25%, 60%);
+  -webkit-transform: translate(15%, 30%);
+  -moz-transform: translate(15%, 30%);
+  -ms-transform: translate(15%, 30%);
+  -o-transform: translate(15%, 30%);
+  transform: translate(15%, 30%);
   z-index: 5;
 }
 #galaxy-app .device-slide-3 .device-copy h1 {
