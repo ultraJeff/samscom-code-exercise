@@ -2,7 +2,7 @@ this["JST"] = this["JST"] || {};
 
 this["JST"]["hello.html"] = function(obj) {obj || (obj = {});var __t, __p = '', __e = _.escape;with (obj) {__p += '<h1>Hello App!</h1>';}return __p};
 
-this["JST"]["layout-mobile.html"] = function(obj) {obj || (obj = {});var __t, __p = '', __e = _.escape;with (obj) {__p += '<div class="app mobile">\r\n\t<div id="slide-1"></div>\r\n\t<div id="slide-2"></div>\r\n\t<div id="slide-3"></div>\r\n\t<div id="slide-4"></div>\r\n</div>';}return __p};
+this["JST"]["layout-mobile.html"] = function(obj) {obj || (obj = {});var __t, __p = '', __e = _.escape;with (obj) {__p += '<div class="app mobile">\r\n\t<div id="slide-1"></div>\r\n\t<div id="device-slide-carousel" class="carousel slide" data-ride="carousel">\r\n\t  <ol class="carousel-indicators">\r\n\t    <li data-target="#device-slide-carousel" data-slide-to="0" class="active"></li>\r\n\t    <li data-target="#device-slide-carousel" data-slide-to="1"></li>\r\n\t    <li data-target="#device-slide-carousel" data-slide-to="2"></li>\r\n\t  </ol>\r\n\t  <div class="carousel-inner" role="listbox">\r\n\t    <div class="item active">\r\n\t      <div id="slide-2"></div>\r\n\t    </div>\r\n\t    <div class="item">\r\n\t      <div id="slide-3"></div>\r\n\t    </div>\r\n\t    <div class="item">\r\n\t      <div id="slide-4"></div>\r\n\t    </div>\r\n\t  </div>\r\n\t</div>\r\n</div>';}return __p};
 
 this["JST"]["layout.html"] = function(obj) {obj || (obj = {});var __t, __p = '', __e = _.escape;with (obj) {__p += '<div class="app">\r\n\t<div id="menu"></div>\r\n\t<div id="content"></div>\r\n</div>';}return __p};
 
