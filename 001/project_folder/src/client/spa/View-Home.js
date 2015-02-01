@@ -15,7 +15,7 @@ define([
 			onAttach: function() {
 				$(this.el).addClass("animated fadeIn");
 				setTimeout(function() {
-					$(".device-slide-1 > img").addClass("fire");
+					$(".device-slide-1 img").addClass("fire");
 				}, 250);
 			},
 			onBeforeRender: function() {
@@ -23,9 +23,9 @@ define([
 				$('#menu').css({opacity: 0}).hide();
 			},
 			events: {
-				"mouseenter #home-nav>div":"rotateArrowDown",
-				"mouseleave #home-nav>div":"rotateArrowSide",
-				"click #home-nav button":"goto"
+				"mouseenter .phone-title":"rotateArrowDown",
+				"mouseleave .phone-title":"rotateArrowSide",
+				"click button":"goto"
 			},
 			rotateArrowDown: function(e) {
 				timer = setTimeout(function() {

@@ -127,8 +127,8 @@ module.exports = function(grunt) {
     cssmin: {
         compress: {
             files: {
-               "public/css/vendor/bootstrap.min.css": ["public/css/vendor/bootstrap.css"],
-               "public/css/default.min.css": ["public/css/default.css"]
+                "public/css/vendor/bootstrap.min.css": ["public/css/vendor/bootstrap.css"],
+                "public/css/default.min.css": ["public/css/default.css"]
             }
         }
     }
