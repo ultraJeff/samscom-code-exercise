@@ -1,13 +1,13 @@
 define([
 	"spa/Layout",
-	"spa/Layout-Mobile",
 	"spa/Menu",
 	"spa/View-Home",
 	"spa/View-Notifications",
 	"spa/View-SPen",
-	"spa/View-Display"
+	"spa/View-Display",
+	"spa/View-Mobile"
 	], 
-	function(Layout, LayoutMobile, Menu, ViewHome, ViewNotifications, ViewSPen, ViewDisplay) {
+	function(Layout, Menu, ViewHome, ViewNotifications, ViewSPen, ViewDisplay, ViewMobile) {
 	var rm = new Backbone.Marionette.RegionManager();
 	var region = rm.addRegions({
 		mainRegion: "#galaxy-app"
@@ -15,10 +15,8 @@ define([
 	var App = Backbone.Marionette.Application.extend({
 		onStart: function() {
 			this.layout = new Layout();
-			this.layoutMobile = new LayoutMobile();
+			region.mainRegion.show(this.layout);
 			if ($(window).width() > 750) {
-				//Desktop
-				region.mainRegion.show(this.layout);
 				this.layout.getRegion("content").show(new ViewHome({
 					app: this
 				}));
@@ -27,18 +25,7 @@ define([
 				}));
 			}
 			else {
-				//Mobile
-				region.mainRegion.show(this.layoutMobile);
-				this.layoutMobile.getRegion("slide1").show(new ViewHome({
-					app: this
-				}));
-				this.layoutMobile.getRegion("slide2").show(new ViewNotifications({
-					app: this
-				}));
-				this.layoutMobile.getRegion("slide3").show(new ViewSPen({
-					app: this
-				}));
-				this.layoutMobile.getRegion("slide4").show(new ViewDisplay({
+				this.layout.getRegion("content").show(new ViewMobile({
 					app: this
 				}));
 			}
@@ -60,21 +47,6 @@ define([
 		},
 		showDisplay: function() {
 			this.layout.getRegion("content").show(new ViewDisplay({
-				app: this
-			}));
-		},
-		showMobile: function() {
-			region.mainRegion.show(this.layoutMobile);
-			this.layoutMobile.getRegion("slide1").show(new ViewHome({
-				app: this
-			}));
-			this.layoutMobile.getRegion("slide2").show(new ViewNotifications({
-				app: this
-			}));
-			this.layoutMobile.getRegion("slide3").show(new ViewSPen({
-				app: this
-			}));
-			this.layoutMobile.getRegion("slide4").show(new ViewDisplay({
 				app: this
 			}));
 		}
