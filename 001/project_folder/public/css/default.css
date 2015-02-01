@@ -1,36 +1,36 @@
 /*Set Up*/
 @font-face {
   font-family: 'samscon-italic';
-  src: url("../fonts/samscon/samsungif_it-webfont.eot");
-  src: url("../fonts/samscon/samsungif_it-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/samscon/samsungif_it-webfont.woff") format("woff"), url("../fonts/samscon/samsungif_it-webfont.ttf") format("truetype"), url("../fonts/samscon/samsungif_it-webfont.svg#InterfaceI") format("svg");
+  src: url("fonts/samscon/samsungif_it-webfont.eot");
+  src: url("fonts/samscon/samsungif_it-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/samscon/samsungif_it-webfont.woff") format("woff"), url("fonts/samscon/samsungif_it-webfont.ttf") format("truetype"), url("fonts/samscon/samsungif_it-webfont.svg#InterfaceI") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'samscon';
-  src: url("../fonts/samscon/samsungif_rg-webfont.eot");
-  src: url("../fonts/samscon/samsungif_rg-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/samscon/samsungif_rg-webfont.woff") format("woff"), url("../fonts/samscon/samsungif_rg-webfont.ttf") format("truetype"), url("../fonts/samscon/samsungif_rg-webfont.svg#InterfaceR") format("svg");
+  src: url("fonts/samscon/samsungif_rg-webfont.eot");
+  src: url("fonts/samscon/samsungif_rg-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/samscon/samsungif_rg-webfont.woff") format("woff"), url("fonts/samscon/samsungif_rg-webfont.ttf") format("truetype"), url("fonts/samscon/samsungif_rg-webfont.svg#InterfaceR") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'samscon-bold';
-  src: url("../fonts/samscon/samsungif_bd-webfont.eot");
-  src: url("../fonts/samscon/samsungif_bd-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/samscon/samsungif_bd-webfont.woff") format("woff"), url("../fonts/samscon/samsungif_bd-webfont.ttf") format("truetype"), url("../fonts/samscon/samsungif_bd-webfont.svg#InterfaceB") format("svg");
+  src: url("fonts/samscon/samsungif_bd-webfont.eot");
+  src: url("fonts/samscon/samsungif_bd-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/samscon/samsungif_bd-webfont.woff") format("woff"), url("fonts/samscon/samsungif_bd-webfont.ttf") format("truetype"), url("fonts/samscon/samsungif_bd-webfont.svg#InterfaceB") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'samscon-boldItalic';
-  src: url("../fonts/samscon/samsungif_bdit-webfont.eot");
-  src: url("../fonts/samscon/samsungif_bdit-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/samscon/samsungif_bdit-webfont.woff") format("woff"), url("../fonts/samscon/samsungif_bdit-webfont.ttf") format("truetype"), url("../fonts/samscon/samsungif_bdit-webfont.svg#InterfaceBI") format("svg");
+  src: url("fonts/samscon/samsungif_bdit-webfont.eot");
+  src: url("fonts/samscon/samsungif_bdit-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/samscon/samsungif_bdit-webfont.woff") format("woff"), url("fonts/samscon/samsungif_bdit-webfont.ttf") format("truetype"), url("fonts/samscon/samsungif_bdit-webfont.svg#InterfaceBI") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'samscon-black';
-  src: url("../fonts/samscon/samsungif_blk-webfont.eot");
-  src: url("../fonts/samscon/samsungif_blk-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/samscon/samsungif_blk-webfont.woff") format("woff"), url("../fonts/samscon/samsungif_blk-webfont.ttf") format("truetype"), url("../fonts/samscon/samsungif_blk-webfont.svg#InterfaceBlk") format("svg");
+  src: url("fonts/samscon/samsungif_blk-webfont.eot");
+  src: url("fonts/samscon/samsungif_blk-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/samscon/samsungif_blk-webfont.woff") format("woff"), url("fonts/samscon/samsungif_blk-webfont.ttf") format("truetype"), url("fonts/samscon/samsungif_blk-webfont.svg#InterfaceBlk") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -55,10 +55,12 @@ button {
 button:focus {
   outline: 0;
 }
+.col-xs-4 {
+  padding: 0;
+}
 /*Galaxy App*/
 #galaxy-app {
   position: absolute;
-  top: 50%;
   left: 0;
   height: 100%;
   width: 100%;
@@ -68,11 +70,8 @@ button:focus {
   background-position: center;
   overflow: hidden;
   max-height: 789px;
-  -webkit-transform: translate(0, -50%);
-  -moz-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  -o-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+  /*Mobile View*/
+
   /*Home View*/
 
   /*Notifications*/
@@ -86,7 +85,8 @@ button:focus {
 }
 @media (max-width: 750px) {
   #galaxy-app {
-    max-height: inherit;
+    max-height: none;
+    height: 1200px;
   }
 }
 @media (min-width: 751px) and (max-width: 815px) {
@@ -115,6 +115,74 @@ button:focus {
   left: 0;
   height: 100%;
   width: 100%;
+}
+#galaxy-app .device-slide-container-mobile .device-slide-mobile .device-copy {
+  text-align: center;
+}
+#galaxy-app .device-slide-container-mobile .device-slide-mobile .device-copy .super {
+  font-size: 0.5em;
+  vertical-align: super;
+}
+#galaxy-app .device-slide-container-mobile .device-slide-mobile .device-copy h1 {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-size: 4em;
+  font-weight: normal;
+  line-height: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  border-right: 1px solid #505159;
+}
+#galaxy-app .device-slide-container-mobile .device-slide-mobile .device-copy h4 {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-weight: normal;
+  color: #B5BDC0;
+  font-size: 1.2em;
+  font-family: samscon-italic;
+  padding-left: 15px;
+}
+#galaxy-app .device-slide-container-mobile .device-slide-mobile .carousel-image-wrapper {
+  height: 335px;
+  overflow: hidden;
+}
+#galaxy-app .device-slide-container-mobile .device-slide-mobile .mobile-copy-row {
+  background: black;
+  position: relative;
+  z-index: 3;
+}
+#galaxy-app .device-slide-container-mobile .device-slide-mobile .mobile-copy-row:before {
+  content: "";
+}
+#galaxy-app .device-slide-container-mobile .device-slide-mobile img.device-image-edge {
+  position: relative;
+  z-index: 3;
+  -webkit-transform: translate3d(25%, 20%, 0);
+  -moz-transform: translate3d(25%, 20%, 0);
+  -ms-transform: translate3d(25%, 20%, 0);
+  -o-transform: translate3d(25%, 20%, 0);
+  transform: translate3d(25%, 20%, 0);
+}
+#galaxy-app .device-slide-container-mobile .device-slide-mobile img.device-image-gear {
+  position: relative;
+  z-index: 1;
+  -webkit-transform: translate3d(-35%, 0, 0);
+  -moz-transform: translate3d(-35%, 0, 0);
+  -ms-transform: translate3d(-35%, 0, 0);
+  -o-transform: translate3d(-35%, 0, 0);
+  transform: translate3d(-35%, 0, 0);
+}
+#galaxy-app .device-slide-container-mobile .device-slide-mobile img.device-image-note {
+  position: relative;
+  z-index: 2;
+  -webkit-transform: translate3d(-5%, 30%, 0);
+  -moz-transform: translate3d(-5%, 30%, 0);
+  -ms-transform: translate3d(-5%, 30%, 0);
+  -o-transform: translate3d(-5%, 30%, 0);
+  transform: translate3d(-5%, 30%, 0);
 }
 #galaxy-app .device-slide-container-1 .device-slide-1 .device-copy {
   text-align: center;

@@ -5,7 +5,7 @@
 @main-scale: 1.15;
 @base-speed: 0.2s;
 @h1-size: 4em;
-@path-fonts: '../fonts/samscon';
+@path-fonts: 'fonts/samscon';
 @font-face {
   font-family: 'samscon-italic';
   src: url("@{path-fonts}/samsungif_it-webfont.eot");
@@ -70,10 +70,12 @@ button {
     outline:0;
   }
 }
+.col-xs-4 {
+  padding:0;
+}
 /*Galaxy App*/
 #galaxy-app {
   position:absolute;
-  top:50%;
   left:0;
   height:100%;
   width:100%;
@@ -83,9 +85,9 @@ button {
   background-position:center;
   overflow:hidden;
   max-height:789px;
-  .translate(0,-50%);
   @media (max-width: 750px) {
-    max-height:inherit;
+    max-height:none;
+    height:1200px;
   }
   @media (min-width: 751px) and (max-width:815px) {
     max-height:610px;
@@ -151,6 +153,68 @@ button {
     left:0;
     height:100%;
     width:100%;
+  }
+  /*Mobile View*/
+  .device-slide-container-mobile {
+    .device-slide-mobile {
+      .device-copy {
+       text-align:center;
+        .super {
+          font-size: @h1-size / 8;
+          vertical-align: super;
+        }
+        h1 {
+          .heading;
+          #device-slide-library .h1;
+          .center();
+          padding-right: 15px;
+          border-right: 1px solid #505159;
+        }
+        h4 {
+          .heading;
+          color: #B5BDC0;
+          font-size:1.2em;
+          .font-italic;
+          padding-left: 15px;
+        }
+        .heading() {
+          display: inline-block;
+          vertical-align: middle;
+          white-space: nowrap;
+          font-weight:normal;
+        }
+      }
+      .carousel-image-wrapper {
+        height:335px;
+        overflow:hidden;
+      }
+      .mobile-copy-row {
+        background:black;
+        position:relative;
+        z-index:3;
+        &:before {
+          content: "";
+
+        }
+      }
+      img {
+        &.device-image-edge {
+          position:relative;
+          z-index:3;
+          .translate3d(25%, 20%, 0);
+        }
+        &.device-image-gear {
+          position:relative;
+          z-index:1;
+          .translate3d(-20%, 28%, 0);
+        }
+        &.device-image-note {
+          position:relative;
+          z-index:2;
+          .translate3d(0, 0, 0);
+        }
+      }
+    }
   }
   /*Home View*/
   .device-slide-container-1 {
