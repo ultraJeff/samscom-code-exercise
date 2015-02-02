@@ -24,6 +24,7 @@ Time was not on my side for this. I had a four day weekend to Arizona planned wi
 1) The desktop version does not center beyond 1527px
 2) The page backgrounds do not slide away
 3) The fade in and up animations are lacking on all of the zones except the default desktop page.
+4) There is inline CSS in areas where I ran out of time
 
 ###Team Members
 [jeff franklin](https://github.com/ultraJeff)
