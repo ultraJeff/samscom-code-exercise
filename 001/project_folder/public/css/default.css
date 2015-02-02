@@ -638,6 +638,10 @@ button:focus {
   position: absolute;
   bottom: 0;
 }
+#galaxy-app .device-slide-2 .img-row img {
+  max-width: 1413px;
+  width: 100%;
+}
 #galaxy-app .device-slide-3 .device-copy {
   max-width: 500px;
   -webkit-transform: translate(15%, 30%);
@@ -703,9 +707,12 @@ button:focus {
   background-color: #20a2ff;
   text-decoration: none;
 }
-#galaxy-app .device-slide-3 .img-row {
+#galaxy-app .device-slide-3 .img-col img {
   position: absolute;
   bottom: 0;
+  top: 20px;
+  max-width: 567px;
+  width: 100%;
 }
 #galaxy-app .device-slide-4 .device-copy {
   max-width: 650px;
@@ -779,6 +786,10 @@ button:focus {
 #galaxy-app .device-slide-4 .img-row {
   position: absolute;
   bottom: 0;
+}
+#galaxy-app .device-slide-4 .img-row img {
+  max-width: 1413px;
+  width: 100%;
 }
 #galaxy-app #menu {
   display: none;
