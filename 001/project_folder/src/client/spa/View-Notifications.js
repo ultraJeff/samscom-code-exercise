@@ -20,6 +20,9 @@ define([
 			onRender: function() {
 				//IE is having trouble fading in the menu
 				$("#menu").css({ opacity : 1 }).show();
+			},
+			onAttach: function() {
+				//Should put animation firing functions here
 			}
 		});
 		return ViewNotifications;

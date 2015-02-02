@@ -16,6 +16,9 @@ define([
 			},
 			onRender: function() {
 
+			},
+			onAttach: function() {
+				//Should put animation firing functions here
 			}
 		});
 		return ViewSPen;

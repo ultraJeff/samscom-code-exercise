@@ -15,9 +15,15 @@ define([
 
 			},
 			onRender: function() {
+
 			},
 			onAttach: function() {
-				//$('#galaxy-app').height($('.device-slide-container-mobile').height());
+				$('#slide-carousel').swiperight(function() {
+					$(this).carousel('prev');
+				});
+				$('#slide-carousel').swipeleft(function() {
+					$(this).carousel('next');
+				});
 			}
 		});
 		return ViewMobile;

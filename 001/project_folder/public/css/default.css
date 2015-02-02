@@ -111,13 +111,13 @@ button:focus {
 }
 @media (max-width: 750px) {
   #galaxy-app #content,
-  #galaxy-app #menu {
+  #galaxy-app nav {
     display: none;
   }
 }
 @media (min-width: 751px) {
   #galaxy-app #content,
-  #galaxy-app #menu {
+  #galaxy-app nav {
     display: block;
   }
 }
